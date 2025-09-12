@@ -3,6 +3,7 @@ export const DICTS = {
   'pt-BR': {
     'app.title': 'Radar de Preços',
     'app.subtitle': 'Insira produtos e compare preços por cidade em segundos.',
+    'key.hint': 'Adicione sua chave SerpAPI em Configurações para obter preços ao vivo.',
     'empty.hint': 'Cole produtos na barra lateral e escolha cidades para começar.',
     'steps.step1': 'PASSO 1',
     'steps.addProducts': 'Adicionar produtos',
@@ -49,6 +50,7 @@ export const DICTS = {
   'en-US': {
     'app.title': 'Radar de Preços',
     'app.subtitle': 'Enter products, compare city-wise prices in seconds.',
+    'key.hint': 'Add your SerpAPI key in Settings to fetch live prices.',
     'empty.hint': 'Paste products in the sidebar and pick cities to get started.',
     'steps.step1': 'STEP 1',
     'steps.addProducts': 'Add products',
