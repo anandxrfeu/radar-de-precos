@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Radar de Preços logo mark">
+  <defs>
+    <linearGradient id="sweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="64" fill="#FFFFFF"/>
+
+  <!-- Concentric rings -->
+  <circle cx="256" cy="256" r="168" fill="none" stroke="#2563EB" stroke-width="10" opacity="0.15"/>
+  <circle cx="256" cy="256" r="120" fill="none" stroke="#2563EB" stroke-width="10" opacity="0.25"/>
+  <circle cx="256" cy="256" r="72"  fill="none" stroke="#2563EB" stroke-width="10" opacity="0.45"/>
+
+  <!-- Sweep wedge -->
+  <path d="M256,256 L256,80 A176,176 0 0,1 392,144 Z" fill="url(#sweep)"/>
+
+  <!-- Sweep arm -->
+  <line x1="256" y1="256" x2="392" y2="144" stroke="#2563EB" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- Blip -->
+  <circle cx="340" cy="196" r="10" fill="#22C55E" stroke="#0F172A" stroke-width="3" />
+
+  <!-- Center -->
+  <circle cx="256" cy="256" r="8" fill="#2563EB"/>
+</svg>
