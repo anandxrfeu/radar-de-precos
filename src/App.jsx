@@ -663,7 +663,7 @@ function SettingsModal({ initialKey, onSave, onClose }) {
           value={value}
           onChange={e => setValue(e.target.value)}
           className="flex-1 rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500/30"
-          placeholder="sk_xxx..."
+          placeholder="xx_xxx..."
         />
         <button
           onClick={() => setShow(v => !v)}
