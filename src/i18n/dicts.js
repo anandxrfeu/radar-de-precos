@@ -47,7 +47,7 @@ export const DICTS = {
     'footer.text': 'Feito no Brasil com SerpApi',
   },
   'en-US': {
-    'app.title': 'City Price Board',
+    'app.title': 'Radar de Preços',
     'app.subtitle': 'Enter products, compare city-wise prices in seconds.',
     'empty.hint': 'Paste products in the sidebar and pick cities to get started.',
     'steps.step1': 'STEP 1',
