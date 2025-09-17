@@ -86,6 +86,8 @@ async function fetchCityOffers(productName, cityCode, apiKey) {
   })
 
   const res = await fetch(`/serpapi/search.json?${params}`);
+
+
   if (!res.ok) return null
   const json = await res.json()
 
