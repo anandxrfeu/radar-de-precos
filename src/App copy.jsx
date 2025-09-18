@@ -128,8 +128,6 @@ export default function App() {
   const selectedSet = useMemo(() => new Set(selectedCities), [selectedCities])
   const { lang } = useI18n() // causes re-render when language changes
 
-  const disabledMobile = loading || products.length === 0 || selectedSet.size === 0 || !apiKey;
-
   const hasSelection = selectedRows.length > 0
 
   // when products are cleared, go back to the empty state
@@ -293,12 +291,6 @@ export default function App() {
 </div>
 
 
-{/* Key hint (mobile, above controls) */}
-{!apiKey && (
-  <div className="md:hidden my-3 rounded-lg border border-amber-200 bg-amber-50 text-amber-900 px-4 py-2 text-sm">
-    {t('key.hint')}
-  </div>
-)}
 
 
         {/* Mobile controls (stacked) */}
@@ -350,21 +342,12 @@ export default function App() {
   </section>
 
   <div className="pt-1">
-
-  <button
-    type="button"
-    onClick={() => getPrices()}
-    disabled={disabledMobile}
-    className={`block mx-auto w-full text-base font-medium px-4 py-2.5 rounded-lg text-white focus:outline-none focus:ring-2 ${
-      disabledMobile
-        ? 'bg-slate-300 cursor-not-allowed'
-        : 'bg-[#2563eb] hover:bg-[#1e55c7] focus:ring-blue-500/30'
-    }`}
-  >
-    {loading ? t('buttons.loading') : t('buttons.getPrices')}
-  </button>
-
-
+    <button
+      onClick={() => getPrices()}
+      className="block mx-auto w-full text-base font-medium px-4 py-2.5 rounded-lg bg-[#2563eb] text-white hover:bg-[#1e55c7] focus:outline-none focus:ring-2 focus:ring-blue-500/30"
+    >
+      {t('buttons.getPrices')}
+    </button>
   </div>
 </div>
 
@@ -392,12 +375,12 @@ export default function App() {
           )}
 
 
-        {/* Key hint (desktop only, original position) */}
-        {!apiKey && (
-          <div className="hidden md:block mb-3 rounded-lg border border-amber-200 bg-amber-50 text-amber-900 px-4 py-2 text-sm">
-            {t('key.hint')}
-          </div>
-        )}
+          {/* Key hint */}
+          {!apiKey && (
+            <div className="mb-3 rounded-lg border border-amber-200 bg-amber-50 text-amber-900 px-4 py-2 text-sm">
+              {t('key.hint')}
+            </div>
+          )}
 
         {apiKey && !hasRequested && (<div className="mb-3 rounded-lg border border-blue-200 text-center bg-blue-50 text-blue-900 px-4 py-2 text-sm">
               {t('empty.hint')}
