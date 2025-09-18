@@ -1,8 +1,7 @@
 # 🛰️ Radar de Preços
 
-![Tela Radar de Preços](assets/app-screenshot.png)
+[![Tela do Radar de Preços](https://github.com/anandxrfeu/radar-de-precos/blob/main/public/assets/app-screenshot.png)](http://radar-de-precos.netlify.app)
 
-![URL do aplicativo](http://radar-de-precos.netlify.app)
 
 Aplicativo web que compara preços de produtos em tempo real usando o SerpApi (Google Shopping). Construído com React + TailwindCSS + Netlify.
 
