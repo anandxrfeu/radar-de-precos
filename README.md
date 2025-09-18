@@ -1,4 +1,4 @@
-# 🛰️ Radar de Preços
+# Radar de Preços
 
 [![Tela do Radar de Preços](https://github.com/anandxrfeu/radar-de-precos/blob/main/public/assets/app-screenshot.png)](http://radar-de-precos.netlify.app)
 
